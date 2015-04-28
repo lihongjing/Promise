@@ -54,16 +54,18 @@
 //   console.error("Error", value)
 // })
 
-//并行
+//并行化
 function testPromise(value) {
   return new Promise(function(resolve, reject){
       if(value < 3) {
         setTimeout(function(){
+          console.log(value)
           resolve(value)
         }, Math.random()*2000)
       }
       else {
         setTimeout(function(){
+          console.log(value)
           reject(value)
         }, Math.random()*2000)
       }
@@ -76,7 +78,7 @@ function createPromises(valueList) {
   })
 }
 
-Promise.all(createPromises([1,2,3,4]))
+Promise.all(createPromises([1,2,0,-1]))
 .then(function(value){
   console.log("Success: ", value)
 }, function(value){
