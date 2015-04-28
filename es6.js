@@ -54,7 +54,7 @@
 //   console.error("Error", value)
 // })
 
-并行
+//并行
 function testPromise(value) {
   return new Promise(function(resolve, reject){
       if(value < 3) {
