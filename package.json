@@ -1,0 +1,16 @@
+{
+  "name": "Promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "q.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bluebird": "^2.9.24",
+    "q": "^1.2.0",
+    "q-io": "^1.12.0"
+  }
+}
