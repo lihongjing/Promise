@@ -162,5 +162,7 @@ Promise.all([deferA.promise, deferB.promise])
 .then(console.log)
 setTimeout(function(){
   deferA.resolve('PROMISES')
+}, 2000)
+setTimeout(function(){
   deferB.resolve('FTW')
-})
+}, 1000)
